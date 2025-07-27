@@ -1,0 +1,11 @@
+# Ignore all CSV and JSON files in config and data folders
+config/*.json
+data/*.csv
+
+# But do NOT ignore example files
+!config/example.json
+!data/example.csv
+
+# Ignore other common files
+*.log
+*.tmp

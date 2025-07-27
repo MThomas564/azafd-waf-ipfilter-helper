@@ -1,0 +1,11 @@
+IPAddress,Comment
+192.0.2.1,Example User 1
+203.0.113.45,Example User 2
+198.51.100.23,Example User 3
+2001:db8::1,Example IPv6 1
+2001:db8:abcd:0012::0,Example IPv6 2
+203.0.113.99,Example User 4
+192.0.2.55,Example User 5
+198.51.100.200,Example User 6
+2001:db8:85a3::8a2e:370:7334,Example IPv6 3
+203.0.113.77,Example User 7
