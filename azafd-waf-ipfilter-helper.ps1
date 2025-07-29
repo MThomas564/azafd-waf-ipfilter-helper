@@ -13,8 +13,11 @@ $configPath = "./config/$Environment.json"
 $config = Get-Content -Raw -Path $configPath | ConvertFrom-Json
 Write-Host "Using configuration from $configPath"
 
+$config
+
 # Load the IP address data from the corresponding CSV file
-$csvData = Import-Csv -Path "./data/$config.fileName"
+$filePath = "./data/$($config.fileName)"
+$csvData = Import-Csv -Path $filePath
 
 Write-Host "Updating WAF policy: $($config.policyName) in resource group: $($config.resourceGroup), with $($csvData.IPAddress.Count) IP addresses."
 
