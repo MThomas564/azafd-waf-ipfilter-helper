@@ -31,7 +31,8 @@ az network front-door waf-policy rule match-condition add `
     --name $config.ipFilterName `
     --match-variable SocketAddr `
     --operator IPMatch `
-    --values $csvData.IPAddress
+    --values $csvData.IPAddress `
+    --negate true
 
 Write-Host "Rule match conditions added successfully."
 
